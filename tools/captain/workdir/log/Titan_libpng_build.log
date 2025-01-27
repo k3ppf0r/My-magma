@@ -1,0 +1,4 @@
+++ id -u xk
+++ id -g xk
++ docker build -t magma/Titan/libpng --build-arg fuzzer_name=Titan --build-arg target_name=libpng --build-arg USER_ID=1000 --build-arg GROUP_ID=1000 --build-arg canaries=1 -f /home/xk/Documents/My-magma/docker/Dockerfile /home/xk/Documents/My-magma
+ERROR: invalid tag "magma/Titan/libpng": repository name must be lowercase
