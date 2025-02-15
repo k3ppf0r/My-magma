@@ -1,0 +1,64 @@
+{
+    "results": {
+        "aflplusplus": {
+            "libpng": {
+                "libpng_read_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "PNG006": 10,
+                            "PNG004": 15,
+                            "PNG005": 15,
+                            "PNG003": 15,
+                            "PNG001": 15,
+                            "PNG007": 15
+                        },
+                        "triggered": {
+                            "PNG006": 215,
+                            "PNG003": 30
+                        }
+                    },
+                    "1": {
+                        "reached": {
+                            "PNG006": 10
+                        },
+                        "triggered": {}
+                    },
+                    "2": {
+                        "reached": {
+                            "PNG006": 10,
+                            "PNG004": 15,
+                            "PNG005": 15,
+                            "PNG003": 15,
+                            "PNG001": 15,
+                            "PNG007": 15
+                        },
+                        "triggered": {
+                            "PNG006": 380,
+                            "PNG003": 20,
+                            "PNG007": 76165
+                        }
+                    }
+                }
+            }
+        },
+        "titan": {
+            "libpng": {
+                "libpng_read_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "PNG006": 15,
+                            "PNG004": 35,
+                            "PNG005": 15,
+                            "PNG003": 10,
+                            "PNG001": 15,
+                            "PNG007": 15
+                        },
+                        "triggered": {
+                            "PNG003": 45
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
