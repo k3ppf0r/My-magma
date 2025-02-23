@@ -1,0 +1,10 @@
+[2025-02-24 03:24] Obtaining sudo permissions to mount tmpfs
+[2025-02-24 03:24] Building magma/afl/libsndfile
+[2025-02-24 03:24] Starting campaigns for sndfile_fuzzer @@
+[2025-02-24 03:24] Building magma/afl/libtiff
+[2025-02-24 03:24] Container afl/libsndfile/sndfile_fuzzer/0 started on CPU 0
+[2025-02-24 03:24] Starting campaigns for tiff_read_rgba_fuzzer 
+[2025-02-24 03:24] Starting campaigns for tiffcp -M @@ tmp.out
+[2025-02-24 03:24] Container afl/libtiff/tiff_read_rgba_fuzzer/0 started on CPU 1
+[2025-02-24 03:24] Building magma/angora/libpng
+[2025-02-24 03:24] Container afl/libtiff/tiffcp/0 started on CPU 2
