@@ -7,7 +7,7 @@
 ###
 
 # WORKDIR: path to directory where shared volumes will be created
-WORKDIR=./workdir_3
+WORKDIR=./workdir_2
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
 # REPEAT=10
@@ -31,7 +31,7 @@ REPEAT=1
 # [TIMEOUT]: time to run each campaign. This variable supports one-letter
 # suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)
 # (default: 1m)
-TIMEOUT=10m
+TIMEOUT=1h
 
 # [POLL]: time (in seconds) between polls (default: 5)
 POLL=5
@@ -73,19 +73,19 @@ POLL=5
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
 # <!-- FUZZERS=(afl aflfast moptafl aflplusplus fairfuzz honggfuzz Titan) -->
-FUZZERS=(moptafl titan)
+FUZZERS=(afl moptafl titan)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
-# afl_TARGETS=(libpng libtiff libxml2)
-# afl_TARGETS=(libpng)
+afl_TARGETS=(libsndfile libtiff)
+# afl_TARGETS=(libpng libxml2 libtiff)
 # aflfast_TARGETS=(libpng)
-moptafl_TARGETS=(libpng lua libsndfile libtiff)
+moptafl_TARGETS=(libsndfile libtiff)
 # aflplusplus_TARGETS=(libpng)
 # fairfuzz_TARGETS=(libpng)
 # honggfuzz_TARGETS=(libpng)
-titan_TARGETS=(lua libpng libsndfile libtiff)
+titan_TARGETS=(libsndfile libtiff)
 
 # [fuzzer_target_PROGRAMS]: an array of program names (from
 # magma/targets/target/configrc) to use as execution drivers when fuzzing the
