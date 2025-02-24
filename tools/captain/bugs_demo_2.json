@@ -1,1 +1,273 @@
-{"results": {"afl": {"libsndfile": {"sndfile_fuzzer": {"1": {"reached": {"SND024": 15, "SND005": 10, "SND001": 15, "SND016": 15, "SND007": 15, "SND006": 15}, "triggered": {}}}}}, "moptafl": {"libsndfile": {"sndfile_fuzzer": {"1": {"reached": {"SND024": 15, "SND017": 70, "SND005": 10, "SND020": 115, "SND001": 15, "SND016": 15, "SND007": 15, "SND006": 15}, "triggered": {"SND017": 85, "SND005": 155}}}}}, "titan": {"libsndfile": {"sndfile_fuzzer": {"1": {"reached": {"SND024": 15, "SND005": 10, "SND001": 15, "SND016": 15, "SND007": 15}, "triggered": {"SND024": 45, "SND005": 115}}}}}}}
+{
+    "results": {
+        "afl": {
+            "libtiff": {
+                "tiffcp": {
+                    "0": {
+                        "reached": {
+                            "TIF003": 10,
+                            "TIF012": 5
+                        },
+                        "triggered": {}
+                    }
+                },
+                "tiff_read_rgba_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 220,
+                            "TIF003": 15,
+                            "TIF014": 220,
+                            "TIF012": 10
+                        },
+                        "triggered": {}
+                    }
+                }
+            },
+            "libsndfile": {
+                "sndfile_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "SND006": 15,
+                            "SND024": 15,
+                            "SND016": 15,
+                            "SND001": 15,
+                            "SND005": 10,
+                            "SND007": 15
+                        },
+                        "triggered": {}
+                    }
+                }
+            }
+        },
+        "moptafl": {
+            "libtiff": {
+                "tiffcp": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 140,
+                            "TIF003": 10,
+                            "TIF014": 140,
+                            "TIF012": 5
+                        },
+                        "triggered": {
+                            "TIF007": 360
+                        }
+                    }
+                },
+                "tiff_read_rgba_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 20,
+                            "TIF003": 15,
+                            "TIF014": 20,
+                            "TIF012": 10
+                        },
+                        "triggered": {
+                            "TIF007": 25
+                        }
+                    }
+                }
+            },
+            "libsndfile": {
+                "sndfile_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "SND006": 15,
+                            "SND024": 15,
+                            "SND020": 120,
+                            "SND016": 15,
+                            "SND017": 105,
+                            "SND001": 15,
+                            "SND005": 10,
+                            "SND007": 15
+                        },
+                        "triggered": {
+                            "SND017": 150,
+                            "SND005": 245
+                        }
+                    }
+                }
+            }
+        },
+        "parmesan": {
+            "libpng": {
+                "libpng_read_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "PNG005": 15,
+                            "PNG007": 15,
+                            "PNG003": 10,
+                            "PNG004": 70,
+                            "PNG001": 15,
+                            "PNG006": 15
+                        },
+                        "triggered": {
+                            "PNG003": 265,
+                            "PNG006": 285
+                        }
+                    }
+                }
+            },
+            "libtiff": {
+                "tiffcp": {
+                    "0": {
+                        "reached": {
+                            "TIF003": 10,
+                            "TIF012": 5
+                        },
+                        "triggered": {}
+                    }
+                },
+                "tiff_read_rgba_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 80,
+                            "TIF003": 15,
+                            "TIF014": 80,
+                            "TIF012": 10
+                        },
+                        "triggered": {
+                            "TIF007": 350
+                        }
+                    }
+                }
+            },
+            "libxml2": {
+                "libxml2_xml_read_memory_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "XML003": 90,
+                            "XML001": 130,
+                            "XML011": 45,
+                            "XML017": 20,
+                            "XML006": 130,
+                            "XML012": 30,
+                            "XML009": 25
+                        },
+                        "triggered": {
+                            "XML003": 330,
+                            "XML017": 90
+                        }
+                    }
+                }
+            },
+            "openssl": {
+                "asn1parse": {
+                    "0": {
+                        "reached": {
+                            "SSL010": 15
+                        },
+                        "triggered": {}
+                    }
+                },
+                "client": {
+                    "0": {
+                        "reached": {
+                            "SSL002": 15,
+                            "SSL008": 330,
+                            "SSL010": 20,
+                            "SSL019": 10,
+                            "SSL003": 15,
+                            "SSL016": 20
+                        },
+                        "triggered": {
+                            "SSL002": 515
+                        }
+                    }
+                },
+                "asn1": {
+                    "0": {
+                        "reached": {
+                            "SSL003": 15,
+                            "SSL016": 20,
+                            "SSL010": 20
+                        },
+                        "triggered": {
+                            "SSL003": 25
+                        }
+                    }
+                },
+                "server": {
+                    "0": {
+                        "reached": {
+                            "SSL002": 20,
+                            "SSL010": 20,
+                            "SSL020": 70,
+                            "SSL005": 20,
+                            "SSL019": 20,
+                            "SSL003": 15
+                        },
+                        "triggered": {}
+                    }
+                },
+                "bignum": {
+                    "0": {
+                        "reached": {
+                            "SSL010": 10
+                        },
+                        "triggered": {}
+                    }
+                }
+            },
+            "libsndfile": {
+                "sndfile_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "SND006": 15,
+                            "SND024": 15,
+                            "SND017": 10,
+                            "SND007": 15
+                        },
+                        "triggered": {
+                            "SND017": 15
+                        }
+                    }
+                }
+            }
+        },
+        "titan": {
+            "libtiff": {
+                "tiffcp": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 70,
+                            "TIF003": 10,
+                            "TIF014": 70,
+                            "TIF012": 5
+                        },
+                        "triggered": {}
+                    }
+                },
+                "tiff_read_rgba_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "TIF007": 65,
+                            "TIF003": 15,
+                            "TIF014": 65,
+                            "TIF012": 10
+                        },
+                        "triggered": {}
+                    }
+                }
+            },
+            "libsndfile": {
+                "sndfile_fuzzer": {
+                    "0": {
+                        "reached": {
+                            "SND024": 15,
+                            "SND016": 15,
+                            "SND017": 450,
+                            "SND001": 15,
+                            "SND005": 10,
+                            "SND007": 15
+                        },
+                        "triggered": {
+                            "SND017": 450,
+                            "SND005": 150
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

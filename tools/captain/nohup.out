@@ -8,3 +8,100 @@
 [2025-02-24 03:24] Container afl/libtiff/tiff_read_rgba_fuzzer/0 started on CPU 1
 [2025-02-24 03:24] Building magma/angora/libpng
 [2025-02-24 03:24] Container afl/libtiff/tiffcp/0 started on CPU 2
+[2025-02-24 03:27] Failed to build magma/angora/libpng. Check build log for info.
+[2025-02-24 03:27] Building magma/angora/libsndfile
+[2025-02-24 03:31] Failed to build magma/angora/libsndfile. Check build log for info.
+[2025-02-24 03:31] Building magma/angora/libtiff
+[2025-02-24 03:34] Container afl/libtiff/tiffcp/0 stopped
+[2025-02-24 03:34] Container afl/libtiff/tiff_read_rgba_fuzzer/0 stopped
+[2025-02-24 03:35] Container afl/libsndfile/sndfile_fuzzer/0 stopped
+[2025-02-24 03:35] Failed to build magma/angora/libtiff. Check build log for info.
+[2025-02-24 03:35] Building magma/angora/libxml2
+[2025-02-24 03:39] Failed to build magma/angora/libxml2. Check build log for info.
+[2025-02-24 03:39] Building magma/angora/lua
+[2025-02-24 03:43] Failed to build magma/angora/lua. Check build log for info.
+[2025-02-24 03:43] Building magma/angora/openssl
+[2025-02-24 03:46] Failed to build magma/angora/openssl. Check build log for info.
+[2025-02-24 03:46] Building magma/angora/php
+[2025-02-24 03:50] Failed to build magma/angora/php. Check build log for info.
+[2025-02-24 03:50] Building magma/angora/poppler
+[2025-02-24 03:53] Failed to build magma/angora/poppler. Check build log for info.
+[2025-02-24 03:53] Building magma/angora/sqlite3
+[2025-02-24 03:56] Failed to build magma/angora/sqlite3. Check build log for info.
+[2025-02-24 03:56] Building magma/parmesan/libpng
+[2025-02-24 04:19] Starting campaigns for libpng_read_fuzzer 
+[2025-02-24 04:19] Building magma/parmesan/libsndfile
+[2025-02-24 04:19] Container parmesan/libpng/libpng_read_fuzzer/0 started on CPU 0
+[2025-02-24 04:29] Container parmesan/libpng/libpng_read_fuzzer/0 stopped
+[2025-02-24 04:35] Starting campaigns for sndfile_fuzzer @@
+[2025-02-24 04:35] Building magma/parmesan/libtiff
+[2025-02-24 04:35] Container parmesan/libsndfile/sndfile_fuzzer/0 started on CPU 0
+[2025-02-24 04:35] Container parmesan/libsndfile/sndfile_fuzzer/0 stopped
+[2025-02-24 04:52] Starting campaigns for tiff_read_rgba_fuzzer 
+[2025-02-24 04:52] Starting campaigns for tiffcp -M @@ tmp.out
+[2025-02-24 04:52] Building magma/parmesan/libxml2
+[2025-02-24 04:52] Container parmesan/libtiff/tiff_read_rgba_fuzzer/0 started on CPU 0
+[2025-02-24 04:52] Container parmesan/libtiff/tiffcp/0 started on CPU 1
+[2025-02-24 05:02] Container parmesan/libtiff/tiffcp/0 stopped
+[2025-02-24 05:02] Container parmesan/libtiff/tiff_read_rgba_fuzzer/0 stopped
+[2025-02-24 05:28] Starting campaigns for libxml2_xml_read_memory_fuzzer 
+[2025-02-24 05:28] Starting campaigns for xmllint --valid --oldxml10 --push --memory @@
+[2025-02-24 05:28] Building magma/parmesan/lua
+[2025-02-24 05:28] Container parmesan/libxml2/libxml2_xml_read_memory_fuzzer/0 started on CPU 0
+[2025-02-24 05:28] Container parmesan/libxml2/xmllint/0 started on CPU 1
+[2025-02-24 05:30] Container parmesan/libxml2/xmllint/0 stopped
+[2025-02-24 05:33] Starting campaigns for lua 
+[2025-02-24 05:33] Building magma/parmesan/openssl
+[2025-02-24 05:33] Container parmesan/lua/lua/0 started on CPU 1
+[2025-02-24 05:40] Container parmesan/libxml2/libxml2_xml_read_memory_fuzzer/0 stopped
+[2025-02-24 05:44] Container parmesan/lua/lua/0 stopped
+[2025-02-24 10:38] Starting campaigns for asn1 
+[2025-02-24 10:38] Starting campaigns for asn1parse 
+[2025-02-24 10:38] Container parmesan/openssl/asn1/0 started on CPU 0
+[2025-02-24 10:38] Starting campaigns for bignum 
+[2025-02-24 10:38] Container parmesan/openssl/asn1parse/0 started on CPU 1
+[2025-02-24 10:38] Starting campaigns for server 
+[2025-02-24 10:38] Container parmesan/openssl/bignum/0 started on CPU 2
+[2025-02-24 10:38] Starting campaigns for client 
+[2025-02-24 10:38] Container parmesan/openssl/server/0 started on CPU 3
+[2025-02-24 10:38] Starting campaigns for x509 
+[2025-02-24 10:38] Container parmesan/openssl/client/0 started on CPU 4
+[2025-02-24 10:38] Building magma/parmesan/php
+[2025-02-24 10:38] Container parmesan/openssl/x509/0 started on CPU 5
+[2025-02-24 10:38] Failed to build magma/parmesan/php. Check build log for info.
+[2025-02-24 10:38] Building magma/parmesan/poppler
+[2025-02-24 10:41] Container parmesan/openssl/x509/0 stopped
+[2025-02-24 10:49] Container parmesan/openssl/asn1parse/0 stopped
+[2025-02-24 10:50] Container parmesan/openssl/asn1/0 stopped
+[2025-02-24 10:50] Container parmesan/openssl/server/0 stopped
+[2025-02-24 10:52] Container parmesan/openssl/client/0 stopped
+[2025-02-24 11:33] Container parmesan/openssl/bignum/0 stopped
+[2025-02-24 12:01] Failed to build magma/parmesan/poppler. Check build log for info.
+[2025-02-24 12:01] Building magma/parmesan/sqlite3
+[2025-02-24 12:16] Failed to build magma/parmesan/sqlite3. Check build log for info.
+[2025-02-24 12:16] Building magma/moptafl/libsndfile
+[2025-02-24 12:16] Starting campaigns for sndfile_fuzzer @@
+[2025-02-24 12:16] Building magma/moptafl/libtiff
+[2025-02-24 12:16] Container moptafl/libsndfile/sndfile_fuzzer/0 started on CPU 0
+[2025-02-24 12:16] Starting campaigns for tiff_read_rgba_fuzzer 
+[2025-02-24 12:16] Starting campaigns for tiffcp -M @@ tmp.out
+[2025-02-24 12:16] Container moptafl/libtiff/tiff_read_rgba_fuzzer/0 started on CPU 1
+[2025-02-24 12:16] Building magma/titan/libsndfile
+[2025-02-24 12:16] Container moptafl/libtiff/tiffcp/0 started on CPU 2
+[2025-02-24 12:16] Starting campaigns for sndfile_fuzzer @@
+[2025-02-24 12:16] Building magma/titan/libtiff
+[2025-02-24 12:16] Container titan/libsndfile/sndfile_fuzzer/0 started on CPU 3
+[2025-02-24 12:16] Starting campaigns for tiff_read_rgba_fuzzer 
+[2025-02-24 12:16] Starting campaigns for tiffcp -M @@ tmp.out
+[2025-02-24 12:16] Waiting for jobs to finish
+[2025-02-24 12:16] Container titan/libtiff/tiff_read_rgba_fuzzer/0 started on CPU 4
+[2025-02-24 12:16] Container titan/libtiff/tiffcp/0 started on CPU 5
+[2025-02-24 12:26] Container moptafl/libtiff/tiffcp/0 stopped
+[2025-02-24 12:26] Container moptafl/libtiff/tiff_read_rgba_fuzzer/0 stopped
+[2025-02-24 12:26] Container titan/libtiff/tiffcp/0 stopped
+[2025-02-24 12:26] Container titan/libtiff/tiff_read_rgba_fuzzer/0 stopped
+[2025-02-24 12:26] Container moptafl/libsndfile/sndfile_fuzzer/0 stopped
+[2025-02-24 12:26] Container titan/libsndfile/sndfile_fuzzer/0 stopped
+[2025-02-24 12:26] Obtaining sudo permissions to umount tmpfs
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
