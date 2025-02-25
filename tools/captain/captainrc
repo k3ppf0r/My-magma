@@ -73,19 +73,24 @@ POLL=5
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
 # <!-- FUZZERS=(afl aflfast moptafl aflplusplus fairfuzz honggfuzz Titan) -->
-FUZZERS=(afl angora parmesan moptafl titan)
+# FUZZERS=(afl aflplusplus parmesan moptafl titan beacon)
+FUZZERS=(beacon)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
-afl_TARGETS=(libsndfile libtiff)
+beacon_TARGETS=(libsndfile)
+# afl_TARGETS=(libpng libsndfile libtiff)
+# aflplusplus_TARGETS=(libpng libsndfile libtiff)
+# parmesan_TARGETS=(libpng libsndfile libtiff)
+# moptafl_TARGETS=(libpng libsndfile libtiff)
+# titan_TARGETS=(libpng libsndfile libtiff)
 # afl_TARGETS=(libpng libxml2 libtiff)
+
 # aflfast_TARGETS=(libpng)
-moptafl_TARGETS=(libsndfile libtiff)
-# aflplusplus_TARGETS=(libpng)
 # fairfuzz_TARGETS=(libpng)
 # honggfuzz_TARGETS=(libpng)
-titan_TARGETS=(libsndfile libtiff)
+
 
 # [fuzzer_target_PROGRAMS]: an array of program names (from
 # magma/targets/target/configrc) to use as execution drivers when fuzzing the
