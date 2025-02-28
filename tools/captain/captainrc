@@ -31,7 +31,7 @@ REPEAT=1
 # [TIMEOUT]: time to run each campaign. This variable supports one-letter
 # suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)
 # (default: 1m)
-TIMEOUT=1h
+TIMEOUT=10m
 
 # [POLL]: time (in seconds) between polls (default: 5)
 POLL=5
@@ -74,12 +74,14 @@ POLL=5
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
 # <!-- FUZZERS=(afl aflfast moptafl aflplusplus fairfuzz honggfuzz Titan) -->
 # FUZZERS=(afl aflplusplus parmesan moptafl titan beacon)
-FUZZERS=(beacon)
+FUZZERS=(titan)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
-beacon_TARGETS=(libsndfile)
+titan_TARGETS=(libpng)
+
+# beacon_TARGETS=(libpng)
 # afl_TARGETS=(libpng libsndfile libtiff)
 # aflplusplus_TARGETS=(libpng libsndfile libtiff)
 # parmesan_TARGETS=(libpng libsndfile libtiff)
